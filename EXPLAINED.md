@@ -1,3 +1,5 @@
+********* Day 1 ********
+
 1)Why records instead of regular classes for User/Project/Task.?
 -> records does not need set up constructers or getter setter it will be done automatically by the compiler itself.
 records are not mutable you can not change with setter because there is none.  i will use classes when i need mutable objects when it can be changed by anyone. 
