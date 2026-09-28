@@ -1,11 +1,8 @@
 package com.yourname.tasktrack;
 
-public record Task(Long id, String title, String description , Project project, User assignee, TaskStatus status) {
+public record Task(long id, String title, String description, Project project, User assignee, TaskStatus status) {
 	
 	public Task {
-        if (id == null) {
-        	throw new IllegalArgumentException("id must not be null");
-        }
         if (id <= 0) {
         	throw new IllegalArgumentException("id must be positive");
         }
